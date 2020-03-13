@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     background: ghostwhite;
     display: flex;
@@ -41,56 +41,18 @@ img {
     text-align: center;
     min-height: 10vh;
     padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .thumbnails .contents > div:nth-of-type(odd) {
     background-color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     /* text-align: left; */
+    
 }
 
 .thumbnails .contents > div:nth-of-type(even) {
     background: chartreuse;
-=======
-body {
-    background: ghostwhite;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-header {
-    flex: 1;
-    color: grey;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-header h1 {
-    font-size: 30px;
-    align-items: center;
-}
-
-.container {
-    border:black 2px solid;
-    padding: 10px;
-}
-
-.thumbnails .contents{
-    margin: 15px;
-    padding: 15px;
-    border: red 2px solid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-}
-
-.thumbnails .contents .content {
-    border: black 2px solid;
-    text-align: center;
-    min-height: 10vh;
-    padding-top: 10px;
->>>>>>> 72de4ef663ee81fa5f44767ed19013648e159fb1
+    grid-template-columns: repeat(2, 1fr);
 }
