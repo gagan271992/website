@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="template1.css">
+    <link rel="stylesheet" href="sidebar.css">
     <title>Template</title>
 </head>
 <body>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">List item 1 </a></li>
+            <li><a href="#">List item 2 </a></li>
+            <li><a href="#">List item 3 </a></li>
+            <li><a href="#">List item 4 </a></li>
+        </ul>
+        <div id="sidebar-button" onclick="toggleSidebarMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <header>
         <div class="container">
             <h1>Template 1</h1>
@@ -53,5 +67,14 @@
             </div>
         </div>
     </section>
+    <script src="sidebarActions.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebar-button').click ( function () {
+                $('#sidebar').toggleClass('visible');
+            })
+        })
+    </script> -->
 </body>
 </html>
