@@ -1,14 +1,10 @@
 function toggleSidebarMenu() {
     document.getElementById("sidebar").classList.toggle('visible');
+    document.getElementById("sidebar-button").style.position = "fixed";
 
 }
 
-document.addEventListener('click', (evt) => {
-    const sidebarElement = document.getElementById("sidebar");
-    const sidebarButton = document.getElementById("sidebar-button");
-    let clickedElem = evt.target;
-    
-    if (clickedElem!=sidebarElement && clickedElem!=sidebarButton) {
-        document.getElementById("sidebar").classList.remove('visible');
-    }
-})
+function closeSideBar() {
+    document.getElementById("sidebar").classList.toggle("visible");
+    document.getElementById("sidebar-button").style.position = "absolute";
+}

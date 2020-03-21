@@ -13,7 +13,7 @@
 }
 #sidebar.visible {
     left: 0px;
-    transition: left 0.1s linear;
+    transition: left 0.2s linear;
 }
 
 ul {
@@ -62,3 +62,26 @@ ul li a {
 #sidebar-button span:nth-child(3) {
     width: 50%;
 } */
+
+#sidebar-heading {
+    padding: 10px 5px;
+    background: #2d2f30;
+    /* color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#sidebar-heading div:nth-child(1) {
+}
+
+#sidebar-heading div:nth-child(2) {
+    /* background: teal; */
+    text-align: right;
+    width: 100px;
+    padding-right: 10px;
+}
+
+#sidebar-heading i {
+    cursor: pointer;
+    color: teal;
+}
