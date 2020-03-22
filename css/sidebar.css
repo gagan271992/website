@@ -2,30 +2,30 @@
     background: #151718;
     color: azure;
     width: 200px;
-    height: 100%;
+    height: 100vh;
     display: block;
-    position: absolute;
+    position: fixed;
     left:-200px;
     top:0px;
-    /* opacity: 90%; */
     transition: left 0.1s linear;
-
+    /* opacity: 0.9; */
+    
 }
 #sidebar.visible {
     left: 0px;
     transition: left 0.2s linear;
 }
 
-ul {
+#sidebar ul {
     margin: 0px;
     padding: 30px 0px;
 }
 
-ul li {
+#sidebar ul li {
     list-style: none;
 }
 
-ul li a {
+#sidebar ul li a {
     background: darkgrey;
     color: darkmagenta;
     border-bottom: 2px solid blue;
@@ -33,6 +33,11 @@ ul li a {
     padding: 10px;
     width: 180px;
     text-decoration: none;
+    opacity: 1;
+}
+
+#sidebar ul li:hover {
+    opacity: 1;
 }
 
 #sidebar-button {
@@ -45,6 +50,7 @@ ul li a {
     position: absolute;
     top: 0px;
     right: -60px;
+    
 }
 
 #sidebar-button span {
@@ -71,8 +77,6 @@ ul li a {
     grid-template-columns: repeat(2, 1fr);
 }
 
-#sidebar-heading div:nth-child(1) {
-}
 
 #sidebar-heading div:nth-child(2) {
     /* background: teal; */
@@ -84,4 +88,8 @@ ul li a {
 #sidebar-heading i {
     cursor: pointer;
     color: teal;
+}
+
+#sidebar-heading i:hover {
+    transform: rotate(180deg);
 }
