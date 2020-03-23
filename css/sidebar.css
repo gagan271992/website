@@ -77,6 +77,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+#sidebar-heading div:nth-child(1){
+    font-size: 20px;
+    padding-left: 6px ;
+}
 
 #sidebar-heading div:nth-child(2) {
     /* background: teal; */
